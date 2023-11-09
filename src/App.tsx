@@ -1,34 +1,22 @@
-import { useState } from 'react';
-import { Button } from './components/ui/button';
+import { AnimatePresence, motion } from 'framer-motion';
+import Transition from './components/landingEntry';
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<>
-			<main>
-				<section className='bg-dark'>
-					<div className='layout flex min-h-screen flex-col items-center justify-center text-white'>
-						<a href='###'>
-							<h1>Vite React Tailwind</h1>
-						</a>
-						<Button
-							onClick={() => {
-								setCount((prev) => prev + 1);
-								setCount((prev) => prev + 1);
-							}}
-						>
-							Button
-						</Button>
-
-						<p>Counter value: {count}</p>
-
-						<footer className='absolute bottom-2 text-gray-300'>
-							© {new Date().getFullYear()} <a href='https://trifall.com'>Jerren Trifan</a>
-						</footer>
+			<AnimatePresence mode='wait'>
+				<motion.div key={'LandingPageEntry'}>
+					<Transition />
+					<div className='flex min-h-screen items-stretch justify-center bg-black'>
+						<div className='relative m-4 flex w-full items-center justify-center overflow-hidden rounded-lg bg-black bg-opacity-75'>
+							<canvas className='orb_canvas'></canvas>
+							<div className='z-10 bg-slate-400 p-32 text-green-200'>testing things!</div>
+							{/* <div className='bg-green-400 mx-5'>test</div> */}
+						</div>
 					</div>
-				</section>
-			</main>
+					<div className='h-screen w-full bg-blue-600'>test2</div>
+				</motion.div>
+			</AnimatePresence>
 		</>
 	);
 }
