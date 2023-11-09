@@ -1,8 +1,8 @@
-# Vite + React + TypeScript + TailwindCSS + ShadCN UI
+# Portfolio Website [WIP}
 
 ## Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint/Prettier rules.
+N/A
 
 Includes:
 
