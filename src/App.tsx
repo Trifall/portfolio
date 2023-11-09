@@ -8,9 +8,11 @@ function App() {
 				<motion.div key={'LandingPageEntry'}>
 					<Transition />
 					<div className='flex min-h-screen items-stretch justify-center bg-black'>
-						<div className='relative m-4 flex w-full items-center justify-center overflow-hidden rounded-lg bg-black bg-opacity-75'>
+						<div className='relative m-6 flex w-full items-center justify-center overflow-hidden rounded-lg bg-black bg-opacity-75'>
 							<canvas className='orb_canvas'></canvas>
-							<div className='z-10 bg-slate-400 p-32 text-green-200'>testing things!</div>
+							<div className='z-10 p-32 text-green-200'>
+								<motion.span className='text-4xl text-white'>Hello!</motion.span>
+							</div>
 							{/* <div className='bg-green-400 mx-5'>test</div> */}
 						</div>
 					</div>

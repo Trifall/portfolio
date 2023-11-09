@@ -79,7 +79,7 @@ class Orb {
 		this.fill = fill;
 
 		// the original radius of the orb, set relative to window height
-		this.radius = random(window.innerHeight / 2.5, window.innerHeight / 2);
+		this.radius = random(window.innerHeight / 2.5, window.innerHeight / 2.75);
 
 		// starting points in "time" for the noise/self similar random values
 		this.xOff = random(0, 1000);
@@ -89,7 +89,7 @@ class Orb {
 
 		// PIXI.Graphics is used to draw 2d primitives (in this case a circle) to the canvas
 		this.graphics = new PIXI.Graphics();
-		this.graphics.alpha = 0.95;
+		this.graphics.alpha = 1;
 
 		// 250ms after the last window resize event, recalculate orb positions.
 		window.addEventListener(
@@ -106,8 +106,8 @@ class Orb {
 
 	setBounds() {
 		// how far from the { x, y } origin can each orb move
-		const maxDistX = window.innerWidth / 2;
-		const maxDistY = window.innerHeight / 2;
+		const maxDistX = window.innerWidth / 1.8;
+		const maxDistY = window.innerHeight / 1.8;
 		// the { x, y } origin for each orb (the bottom right of the screen)
 		const originX = window.innerWidth / 2;
 		const originY = window.innerHeight / 2;
@@ -135,7 +135,7 @@ class Orb {
 		this.x = map(xNoise, -1, 1, this.bounds['x'].min, this.bounds['x'].max);
 		this.y = map(yNoise, -1, 1, this.bounds['y'].min, this.bounds['y'].max);
 		// map scaleNoise (between -1 and 1) to a scale value somewhere between half of the orb's original size, and 100% of it's original size
-		this.scale = map(scaleNoise, -1, 1, 0.75, 1);
+		this.scale = map(scaleNoise, -1, 1, 0.75, 1.25);
 
 		// step through "time"
 		this.xOff += this.inc;

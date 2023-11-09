@@ -34,7 +34,7 @@ const Transition = () => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setIsVisible(false);
-		}, 3000);
+		}, 1500);
 
 		return () => clearTimeout(timer);
 	}, []);
@@ -42,12 +42,12 @@ const Transition = () => {
 	return (
 		<>
 			<motion.div
-				className='z-99999 from--500 fixed bottom-full left-0 right-0 flex h-screen w-screen items-center justify-center bg-gradient-to-tr from-black to-gray-900'
+				className='z-99999 from--500 fixed bottom-full left-0 right-0 flex h-screen w-screen items-center justify-center bg-gradient-to-t from-black to-gray-950'
 				variants={transitionVariants}
 				initial='initial'
 				animate='animate'
 				exit='exit'
-				transition={{ delay: 3, duration: 2, ease: 'easeInOut' }}
+				transition={{ delay: 1.5, duration: 1, ease: 'easeInOut' }}
 			>
 				<AnimatePresence>
 					{isVisible && (
