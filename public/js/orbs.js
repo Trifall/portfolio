@@ -4,8 +4,6 @@ import hsl from 'https://cdn.skypack.dev/hsl-to-hex';
 import * as PIXI from 'https://cdn.skypack.dev/pixi.js@5.x';
 import SimplexNoise from 'https://cdn.skypack.dev/simplex-noise@3.0.0';
 
-console.log('run1');
-
 // return a random number within a range
 function random(min, max) {
 	return Math.random() * (max - min) + min;
@@ -47,11 +45,11 @@ class ColorPalette {
 	}
 
 	blue() {
-		return '0x4651c3';
+		return '0x5b65cf';
 	}
 
 	pink() {
-		return '0xd90166';
+		return '0xf72a8a';
 	}
 
 	setCustomProperties() {
@@ -85,7 +83,7 @@ class Orb {
 		this.xOff = random(0, 1000);
 		this.yOff = random(0, 1000);
 		// how quickly the noise/self similar random values step through time
-		this.inc = 0.0015;
+		this.inc = 0.0005;
 
 		// PIXI.Graphics is used to draw 2d primitives (in this case a circle) to the canvas
 		this.graphics = new PIXI.Graphics();
@@ -170,7 +168,7 @@ const app = new PIXI.Application({
 	transparent: true,
 });
 
-app.stage.filters = [new KawaseBlurFilter(60, 10, true)];
+app.stage.filters = [new KawaseBlurFilter(80, 20, true)];
 
 const colorPalette = new ColorPalette();
 
