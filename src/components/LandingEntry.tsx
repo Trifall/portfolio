@@ -42,7 +42,7 @@ const Transition = () => {
 	return (
 		<>
 			<motion.div
-				className='z-99999 from--500 fixed bottom-full left-0 right-0 flex h-screen w-screen items-center justify-center bg-gradient-to-t from-black to-gray-950'
+				className='from--500 fixed bottom-full left-0 right-0 z-99999 flex h-screen w-screen items-center justify-center bg-gradient-to-t from-black to-gray-950'
 				variants={transitionVariants}
 				initial='initial'
 				animate='animate'
@@ -52,12 +52,12 @@ const Transition = () => {
 				<AnimatePresence>
 					{isVisible && (
 						<motion.span
-							className='text-5xl font-bold'
+							className='font-sans text-5xl font-bold'
 							variants={transitionSpanVariants}
 							animate='animate'
 							exit='exit'
 							initial='initial'
-							transition={{ delay: 0, duration: 1, ease: 'easeInOut' }}
+							transition={{ delay: 0.5, duration: 0.5, ease: 'easeInOut' }}
 						>
 							Jerren Trifan
 						</motion.span>
