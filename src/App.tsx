@@ -1,9 +1,10 @@
 import { AnimatePresence, motion } from 'framer-motion';
+import { lazy } from 'react';
 import Parallax from 'react-next-parallax';
-import BackgroundGradient from './components/BackgroundGradient';
 import Transition from './components/LandingEntry';
 import SmoothLink from './components/SmoothLink';
-import { BoxesCore } from './components/ui/background-boxes';
+
+const BackgroundGradient = lazy(() => import('./components/BackgroundGradient'));
 
 function App() {
 	return (
@@ -46,7 +47,7 @@ function App() {
 					key='ProjectsWrapper'
 				>
 					<div className='absolute left-0 top-0 h-full w-full bg-black bg-opacity-75' key='BoxesWrapper'>
-						<BoxesCore />
+						{/* <BoxesCore /> */}
 					</div>
 
 					<motion.span className='absolute top-12 text-4xl leading-snug text-white sm:text-5xl'>Projects</motion.span>
