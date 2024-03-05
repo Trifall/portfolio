@@ -4,8 +4,8 @@ import React from 'react';
 import { cn } from '../../lib/utils';
 
 export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
-	const rows = new Array(150).fill(1);
-	const cols = new Array(100).fill(1);
+	const rows = new Array(120).fill(1);
+	const cols = new Array(75).fill(1);
 	const colors = [
 		'--sky-300',
 		'--pink-300',
@@ -24,7 +24,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
 	return (
 		<div
 			style={{
-				transform: `translate(-40%,-60%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
+				transform: `translate(-40%,-65%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
 			}}
 			className={cn('absolute z-0 flex h-full w-full -translate-x-1/2 -translate-y-1/2 p-4 ', className)}
 			{...rest}

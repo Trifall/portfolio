@@ -4,7 +4,10 @@ import Parallax from 'react-next-parallax';
 import Transition from './components/LandingEntry';
 import SmoothLink from './components/SmoothLink';
 
-const BackgroundGradient = lazy(() => import('./components/BackgroundGradient'));
+const BackgroundBlobs = lazy(() => import('./components/BackgroundGradient'));
+const BackgroundTiles = lazy(() =>
+	import('./components/ui/background-boxes').then((module) => ({ default: module.BoxesCore }))
+);
 
 function App() {
 	return (
@@ -17,7 +20,7 @@ function App() {
 							className='relative m-6 flex w-full items-center justify-center overflow-hidden rounded-lg bg-black bg-opacity-75'
 							key='InnerWrapper'
 						>
-							<BackgroundGradient />
+							<BackgroundBlobs />
 							<div
 								className='absolute left-1/2 top-1/2 z-10 w-[85%] -translate-x-1/2 -translate-y-1/2 p-4 sm:w-[80%] sm:p-32'
 								key='TextWrapper'
@@ -47,7 +50,7 @@ function App() {
 					key='ProjectsWrapper'
 				>
 					<div className='absolute left-0 top-0 h-full w-full bg-black bg-opacity-75' key='BoxesWrapper'>
-						{/* <BoxesCore /> */}
+						<BackgroundTiles />
 					</div>
 
 					<motion.span className='absolute top-12 text-4xl leading-snug text-white sm:text-5xl'>Projects</motion.span>
