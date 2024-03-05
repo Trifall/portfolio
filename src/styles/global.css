@@ -67,6 +67,10 @@ body {
 	background-color: #131516 !important;
 }
 
+html {
+	overflow-x: initial !important;
+}
+
 @media (prefers-color-scheme: dark) {
 	html {
 		color-scheme: dark;

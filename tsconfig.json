@@ -12,6 +12,7 @@
 		"noUncheckedIndexedAccess": true,
 		"forceConsistentCasingInFileNames": true,
 		"allowImportingTsExtensions": true,
+		"allowSyntheticDefaultImports": true,
 		"experimentalDecorators": true,
 		"removeComments": true,
 		"module": "esnext",

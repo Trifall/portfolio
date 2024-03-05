@@ -19,15 +19,20 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
+		"@pixi/filter-kawase-blur": "3.2.0",
 		"@radix-ui/react-slot": "^1.0.2",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.0",
+		"debounce": "^2.0.0",
 		"framer-motion": "^11.0.8",
+		"hsl-to-hex": "^1.0.0",
 		"lucide-react": "^0.344.0",
+		"pixi.js": "5.3.12",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-next-parallax": "^0.1.0",
 		"react-scroll": "^1.9.0",
+		"simplex-noise": "3.0.1",
 		"tailwind-merge": "^2.2.1",
 		"tailwindcss-animate": "^1.0.7"
 	},
