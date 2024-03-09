@@ -58,7 +58,7 @@ function App() {
 						<div className='relative h-[600px] w-[800px] [&>img]:absolute [&>img]:inset-0 [&>span]:absolute [&>span]:inset-0'>
 							<img src='https://via.placeholder.com/800x600' alt='placeholder' data-parallax-offset='-2' />
 							<span className='p-3 text-4xl leading-snug text-white sm:text-[2.3vw]' data-parallax-offset='2'>
-								add project card thing here!
+								Add project card here!
 							</span>
 						</div>
 					</Parallax>
