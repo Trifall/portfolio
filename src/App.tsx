@@ -30,7 +30,6 @@ function App() {
 									<br /> I love creating software solutions in many different languages and frameworks.
 								</motion.span>
 							</div>
-							{/* My Projects Learn more Button */}
 							<div className='absolute bottom-16 right-16 z-10' key='ProjectsLinkWrapper'>
 								<SmoothLink itemName='projects'>
 									<span className='text-5xl'>My Projects</span>
