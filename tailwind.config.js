@@ -83,6 +83,12 @@ export const theme = {
 			'accordion-down': 'accordion-down 0.2s ease-out',
 			'accordion-up': 'accordion-up 0.2s ease-out',
 		},
+		screen: {
+			xxs: '320px',
+			xsm: '360px',
+			msm: '450px',
+			'2xl': '1400px',
+		},
 	},
 };
 export const plugins = [require('tailwindcss-animate'), addVariablesForColors];

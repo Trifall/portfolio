@@ -22,22 +22,22 @@ function App() {
 						>
 							<BackgroundBlobs />
 							<div
-								className='absolute left-1/2 top-1/2 z-10 w-[85%] -translate-x-1/2 -translate-y-1/2 p-4 sm:w-[80%] sm:p-32'
+								className='absolute left-1/2 top-1/2 z-10 w-[85%] -translate-x-1/2 -translate-y-1/2 p-4 sm:w-[80%] sm:p-12 lg:p-24'
 								key='TextWrapper'
 							>
-								<motion.span className='text-4xl leading-snug text-white sm:text-[2.3vw] md:text-5xl'>
-									Howdy Partner! I&apos;m Jerren Trifan, a web and software developer. <br />
+								<motion.span className='text-[6.5vw] leading-normal text-white sm:text-4xl sm:text-[4vw] md:text-5xl'>
+									Howdy Partner! I&apos;m Jerren, a web and software developer. <br />
 									<br /> I love creating software solutions in many different languages and frameworks.
 								</motion.span>
 							</div>
-							<div className='absolute bottom-16 right-16 z-10' key='ProjectsLinkWrapper'>
+							<div className='absolute bottom-6 right-auto z-10 sm:bottom-16 sm:right-16' key='ProjectsLinkWrapper'>
 								<SmoothLink itemName='projects'>
 									<span className='text-5xl'>My Projects</span>
 								</SmoothLink>
 							</div>
-							<div className='absolute left-16 top-16 z-10 ' key='HomeLinkWrapper'>
+							<div className='absolute left-auto top-6 z-10 sm:left-16 sm:top-16' key='HomeLinkWrapper'>
 								<SmoothLink itemName='landing'>
-									<span className='text-2xl'>Jerren Trifan</span>
+									<span className='text-4xl sm:text-2xl'>Jerren Trifan</span>
 								</SmoothLink>
 							</div>
 						</div>
@@ -54,10 +54,16 @@ function App() {
 
 					<motion.span className='absolute top-12 text-4xl leading-snug text-white sm:text-5xl'>Projects</motion.span>
 					<Parallax style={{ position: 'relative' }} className='p-6'>
-						<div className='relative h-[600px] w-[800px] [&>img]:absolute [&>img]:inset-0 [&>span]:absolute [&>span]:inset-0'>
-							<img src='https://via.placeholder.com/800x600' alt='placeholder' data-parallax-offset='-2' />
-							<span className='p-3 text-4xl leading-snug text-white sm:text-[2.3vw]' data-parallax-offset='2'>
-								Add project card here!
+						<div className='relative h-[300px] w-[450px] [&>img]:absolute [&>img]:inset-0 [&>span]:absolute '>
+							<img src='https://via.placeholder.com/600x400' alt='placeholder' data-parallax-offset='-2' />
+							<span className='p-3 text-4xl leading-snug text-white sm:text-[1.6vw]' data-parallax-offset='2'>
+								Add project name
+							</span>
+							<span
+								className='bottom-0 left-0 p-3 text-4xl leading-snug text-white sm:text-[1.4vw]'
+								data-parallax-offset='2'
+							>
+								Project description
 							</span>
 						</div>
 					</Parallax>
