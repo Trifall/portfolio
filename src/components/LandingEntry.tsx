@@ -57,7 +57,7 @@ const Transition = () => {
 							animate='animate'
 							exit='exit'
 							initial='initial'
-							transition={{ delay: 0.5, duration: 0.5, ease: 'easeInOut' }}
+							transition={{ delay: 0.5, duration: 0.25, ease: 'easeInOut' }}
 						>
 							Jerren Trifan
 						</motion.span>
