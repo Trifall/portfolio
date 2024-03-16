@@ -54,7 +54,7 @@ function App() {
 
 					<motion.span className='absolute top-12 text-4xl leading-snug text-white sm:text-5xl'>Projects</motion.span>
 					<Parallax style={{ position: 'relative' }} className='p-6'>
-						<div className='relative h-[300px] w-[450px] [&>img]:absolute [&>img]:inset-0 [&>span]:absolute '>
+						<div className='relative h-[300px] w-[450px] [&>img]:absolute [&>img]:inset-0 [&>span]:absolute'>
 							<img src='https://via.placeholder.com/600x400' alt='placeholder' data-parallax-offset='-2' />
 							<span className='p-3 text-4xl leading-snug text-white sm:text-[1.6vw]' data-parallax-offset='2'>
 								Add project name
@@ -63,7 +63,7 @@ function App() {
 								className='bottom-0 left-0 p-3 text-4xl leading-snug text-white sm:text-[1.4vw]'
 								data-parallax-offset='2'
 							>
-								Project description
+								Project description example listing here with a decent amount of text to fill the space.
 							</span>
 						</div>
 					</Parallax>
